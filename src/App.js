@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import FirstComponent from './ClassComponent1';
+import SecondComponent from './ClassComponent2';
+import FunctionComponent1 from './FunctionComponent1';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <h1>This is Parent Component</h1>
+    <FirstComponent />
+    <SecondComponent />
+    <FunctionComponent1 />
     </div>
   );
 }
